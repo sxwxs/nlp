@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>附录1 语料库和数据集</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="语料库和数据集" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">自然语言处理实战-在线资源</a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/nlp.html">NLP</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/dataset.html" rel="bookmark"
+           title="Permalink to 附录1 语料库和数据集">附录1  语料库和数据集</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2022-04-26T22:00:00+08:00">
+                Published: 周二 26 四月 2022
+        </abbr>
+		<br />
+        <abbr class="modified" title="2022-04-26T22:30:00+08:00">
+                Updated: 周二 26 四月 2022
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/sxw.html">sxw</a>
+        </address>
+<p>In <a href="/category/nlp.html">NLP</a>.</p>
+<p>tags: <a href="/tag/nlp.html">NLP</a> </p>
+</footer><!-- /.post-info -->      <p>数据对于自然语言处理非常重要。本节将介绍一些公开的数据集，以中文和英文为主，翻译数据集中也包含一些其他语言，形式多种多样。</p>
+<h2>1.1  nlp_chinese_corpus中文语料整理</h2>
+<p>地址：https://github.com/brightmart/nlp_chinese_corpus。
+该仓库提供了维基百科(wiki2019zh，100万个结构良好的中文词条)，新闻语料(news2016zh，250万篇新闻，含关键词、描述)，百科问答(baike2018qa，150万个带问题类型的问答)，社区问答json版(webtext2019zh，410万个高质量社区问答，适合训练超大模型)和翻译语料(translation2019zh，520万个中英文句子对)。</p>
+<h2>1.2  搜狗实验室提供的开放数据</h2>
+<p>搜狗实验室提供了一些中文语料和数据，可免费下载，但目前有很多内容已经失效和无法使用，又有部分语料因为体积过大无法在线下载，但是据介绍也提供线下拷贝的渠道。搜狗实验室主页是：http://www.sogou.com/labs/。
+下文介绍部分引用了搜狗实验室网站的介绍。除了自然语言处理的数据集和语料外，还提供了一些图片数据集。
+注意：由于该数据集中提供了很多URL，但是由于时间比较久远，很多URL已经失效了，所以数据集可能并不能正常使用。</p>
+<h3>1.搜狐新闻数据（SogouCS）</h3>
+<p>地址：https://www.sogou.com/labs/resource/cs.php。
+来自搜狐新闻2012年6月—7月期间国内，国际，体育，社会，娱乐等18个频道的新闻数据，提供URL和正文信息。
+完整版数据有600多MB。还有历史版数据。需要登记信息后获取下载用的账户和密码。另外据网页介绍还有更大规模的数据可以提供硬盘拷贝，但需要通过邮件联系。</p>
+<h3>2.全网新闻数据(SogouCA)</h3>
+<p>地址：https://www.sogou.com/labs/resource/ca.php。
+来自若干新闻站点2012年6月—7月期间国内，国际，体育，社会，娱乐等18个频道的新闻数据，提供URL和正文信息。
+大小有700MB左右，还有更大的历史版可以下载。</p>
+<h3>3.互联网词库(SogouW)</h3>
+<p>地址：https://www.sogou.com/labs/resource/w.php。
+互联网词库来自于对SOGOU搜索引擎所索引到的中文互联网语料的统计分析，统计所进行的时间是2006年10月，涉及到的互联网语料规模在1亿页面以上。统计出的词条数约为15万条高频词，除标出这部分词条的词频信息之外，还标出了常用的词性信息。
+数据格式如下。
+词A 词频 词性1 词性2 … 词性N
+词B 词频 词性1 词性2 … 词性N
+词C 词频 词性1 词性2 … 词性N
+数据大小小于2MB。其中词性符号对应关系如表1.2所示。
+表1.2  词性符号对照表
+符号  词性  符号  词性
+N   名词  CONJ    连词
+V   动词  SUFFIX  前缀
+ADJ 形容词 PREFIX  后缀
+ADV 副词  PREP    介词
+CLAS    量词  PRON    代词
+ECHO    拟声词 QUES    疑问词
+STRU    结构助词    NUM 数词
+AUX 助词  IDIOM   成语
+COOR    并列连词        </p>
+<h3>4.互联网语料库(SogouT)</h3>
+<p>地址：https://www.sogou.com/labs/resource/t.php。
+来自互联网各种类型的1.3亿个原始网页, 压缩前的大小超过了5TB。该数据在网页上只提供了样例下载，完整版需要联系拷贝。
+与之配套的数据集有链接关系库(SogouT-Link)记录了互联网语料库中的文档的链接对应的关系。地址是：https://www.sogou.com/labs/resource/t-link.php。链接库同样无法在线下载。
+还有SogouRank库(SogouT-Rank) 对应互联网语料库内文档的SogouRank列表。地址是：https://www.sogou.com/labs/resource/t-rank.php。同样无法在现下载。
+网页中包含的部分图片在互联网图片库(SogouP)数据集中。其中收集了包括人物、动物、建筑、机械、风景、运动等类别，总数高达2,836,535张图片。对于每张图片，数据集中给出了图片的原图、缩略图、所在网页以及所在网页中的相关文本。该数据集同样无法在线下载地址是：http://www.sogou.com/labs/resource/p.php。</p>
+<h3>5.中文词语搭配库(SogouR)</h3>
+<p>地址：https://www.sogou.com/labs/resource/r.php。
+互联网词语搭配关系库来自于对SOGOU搜索引擎所索引到的中文互联网语料的统计分析，统计所进行的时间是2006年10月，涉及到的互联网语料规模在1亿页面以上。涉及到的搭配样例超过2000万，涉及到的高频词超过15万。
+数据格式如下。
+二元组1 同现次数1
+二元组2 同现次数2
+… …
+二元组N 同现次数N
+数据完整版150MB左右。</p>
+<h3>6.用户查询日志(SogouQ)</h3>
+<p>地址：https://www.sogou.com/labs/resource/q.php。
+搜索引擎查询日志库设计为包括约1个月(2008年6月)Sogou搜索引擎部分网页查询需求及用户点击情况的网页查询日志数据集合。为进行中文搜索引擎用户行为分析的研究者提供基准研究语料。
+完整版数据1.9GB。</p>
+<h3>7.文本分类评价(SogouTCE)</h3>
+<p>地址：https://www.sogou.com/labs/resource/tce.php。
+下载地址：
+https://www.sogou.com/labs/resource/ftp.php?dir=/Data/SogouTCE/SogouTCE.zip。
+可以评估文本分类结果的正确性的数据，语料来自搜狐等多个新闻网站近20个频道。数据格式如下。
+URL前缀\t对应类别标记
+这里给出的数据仅有URL，但是很多URL已经失效，所以可能并不能正常使用该数据集。</p>
+<h2>1.3  DuReader百度阅读理解数据集</h2>
+<p>地址：http://ai.baidu.com/broad/subordinate?dataset=dureader。
+大型中文阅读理解数据集。2.0版包含超过30万个问题和140万篇问题相关文档和66万人工生成的回答。</p>
+<h2>1.4  SAOKE百度信息抽取数据集:</h2>
+<p>地址是：http://ai.baidu.com/broad/subordinate?dataset=saoke。
+Symbol Aided Open Knowledge Expression即符号辅助开放式知识表达。SAOKE数据集是一个人工标注的数据集，包含4万多个中文句子和SAOKE形式的相应事实。据其网站介绍，它是开放域信息提取任务中最大的公开可用的人类标注数据集。</p>
+<h2>1.5  中国哲学书电子计划</h2>
+<p>地址是：https://ctext.org/。
+是一个在线的开放的电子图书馆。有超过三万本中国哲学著作，已有50亿字，并且同时提供汉语和英语版本。</p>
+<h2>1.6  中国古诗词数据库</h2>
+<p>地址：https://github.com/chinese-poetry/chinese-poetry。
+包含5.5万首唐诗、26万首宋诗、2.1万首宋词和其他古典文集。包含唐宋两朝近 1.4万诗人，和两宋时期1千多位词人。数据来源于互联网。
+第15章的对诗模型使用了该数据集中的一部分数据。</p>
+<h2>1.7  THUOCL清华大学开放中文词库</h2>
+<p>地址：http://thuocl.thunlp.org/。
+THUOCL（THU Open Chinese Lexicon）是由清华大学自然语言处理与社会人文计算实验室整理推出的一套高质量的中文词库，词表来自主流网站的社会标签、搜索热词、输入法词库等。</p>
+<h2>1.8  北京大学开放研究数据平台提供的资源</h2>
+<p>平台地址：https://opendata.pku.edu.cn/。
+该网站提供了大量的开放数据资源下载，往往是来自一些论文的数据，并提供了搜索功能。
+其中提供的数据，如“1000篇句子对齐双语文章.7z”，下载地址：
+https://opendata.pku.edu.cn/file.xhtml?fileId=14&amp;datasetVersionId=3。
+包含900多个文本文件，每个文件中是英语和中文对照的文章。</p>
+<h2>1.9  北大计算语言研究所提供的语料</h2>
+<p>著名的人民日报标注语料库（PFR）是对人民日报文章分词和词性标注。之前可以在北京大学计算语言研究所网站下载，但目前好像没有可用的下载地址。目前该所网站上提供的开放数据主要是样例数据，数据量较少，如：
+现代汉语切分、标注、注音语料库-1998年1月份样例与规范，地址：
+https://klcl.pku.edu.cn/gxzy/231686.htm。
+GKB规范与1万词样例：
+https://klcl.pku.edu.cn/gxzy/231689.htm。</p>
+<h2>1.10  哈工大信息检索研究中心</h2>
+<p>哈工大信息检索研究中心(HIT CIR)语言技术平台共享资源网站地址是：
+http://ir.hit.edu.cn/demo/ltp/Sharing_Plan.htm。
+HIT-CIR语言技术平台共享资源的完整数据只免费提供给“高校和科研院所”用于科学研究，对于独立个人或者商业公司不免费提供。但是开放下载一个只包含10%数据样例文件。</p>
+<h2>1.11  CC-CEDICT汉英词典数据</h2>
+<p>CC-CEDICT是Paul Denisowski于1997年启动的CEDICT项目的延续，其目的是提供一个完整的可下载的中英文字典，并提供汉字的拼音发音。
+https://www.mdbg.net/chinese/dictionary?page=cc-cedict。
+提供了CC-CEDICT的下载。该数据集包含了10万个中文字词的英语解释和汉语拼音注音。且同时包含繁体字和简体字。</p>
+<h2>1.12  ECDICT英汉词典数据</h2>
+<p>地址：https://github.com/skywind3000/ecdict。
+Free English to Chinese Dictionary Database即开放英汉词典数据库。是英汉双解词典数据库。收词量300多万。Csv格式，文件大小200多MB。表1.3展示了该词典中各字段的含义。</p>
+<p>表1.3  词典各字段含义</p>
+<p>字段  解释
+word    单词名称
+phonetic    音标，以英语英标为主
+definition  单词释义（英文），每行一个释义
+translation 单词释义（中文），每行一个释义
+pos 词语位置，用"/"分割不同位置
+collins 柯林斯星级
+oxford  是否是牛津三千核心词汇
+tag 字符串标签：zk/中考，gk/高考，cet4/四级等等标签，空格分割
+bnc 英国国家语料库词频顺序
+frq 当代语料库词频顺序
+exchange    时态复数等变换，使用"/"分割不同项目，见后面表格
+detail  json扩展信息，字典形式保存例句（待添加）
+audio   读音音频url（待添加）
+该数据集还提供英语单词的词形变换，包括过去式（p），过去分词（d），现在分词（i），第三人称单数（3），形容词比较级（r），形容词最高级（t），Lemma（0）和Lemma 的变换形式（1）。</p>
+<h2>1.13  中文地址解析数据集</h2>
+<p>地址：https://github.com/leodotnet/neural-chinese-address-parsing/。
+来自论文“Neural Chinese Address Parsing”。是文本标注任务，目标是把一个中文地址中标记出各个部分，一共有共国家、省市区直到商户和名称等一共21种标签（还包括一个无法分类其他信息：otherinfo）。
+第14章中文地址解析使用了该数据集。</p>
+<h2>1.14  其他中文数据集</h2>
+<p>国家语委现代汉语语料库http://www.cncorpus.org/。
+维基百科语料库：https://dumps.wikimedia.org/，可以下载维基百科上的词条数据，有各种语言的版本。
+HowNet：是类似于WordNet的中文语料库或者说知识系统。HowNet的地址是：http://www.keenage.com。
+中文概念词典：是北京大学计算语言学研究所开发的类似于WordNet的中文语料库。他与WordNet的结构相兼容。
+PD&amp;CFT: A Chinese Reading Comprehension Dataset：中文阅读理解数据集，地址：https://github.com/ymcui/Chinese-Cloze-RC。
+中文突发事件语料库：由上海大学（语义智能实验室）构建。根据国务院颁布的《国家突发公共事件总体应急预案》的分类体系，从互联网上收集了5类（地震、火灾、交通事故、恐怖袭击和食物中毒）突发事件的新闻报道作为生语料，然后再对生语料进行文本预处理、文本分析、事件标注以及一致性检查等处理，最后将标注结果保存到语料库中，CEC合计332篇。https://github.com/shijiebei2009/CEC-Corpus。
+中文人名语料库（Chinese-Names-Corpus）：https://github.com/wainshine/Chinese-Names-Corpus。
+ChineseNames数据集：https://github.com/psychbruce/ChineseNames。
+中文缩略语数据集：来自论文“A Chinese Dataset with Negative Full Forms for General Abbreviation Prediction”。https://github.com/zhangyics/Chinese-abbreviation-dataset。</p>
+<h2>1.15  Visual QA数据集</h2>
+<p>地址：https://visualqa.org/。
+是一个同时包含视觉和自然语言理解的多模态数据集。包含26万多张图片，每张图片有用英语描述的一些问题（每张图片至少3个问题，平均5.4个），对于每个问题有10个正确答案和三个看似正确（但可能不正确）的答案。还有可以自动评估结果的指标。</p>
+<h2>1.16  多模态反讽检测数据集</h2>
+<p>地址：https://github.com/headacheboy/data-of-multimodal-sarcasm-detection。
+该数据集来自于论文“Multi-Modal Sarcasm Detection in Twitter with Hierarchical Fusion Model”。数据集中包含2万多条图片加文字的数据。语言是英语，数据采集自Twitter，数据集的目标是判断数据中的文字是否是讽刺。很多文字必须要结合图片才能做出具体的判断，如文字描述表示搬运很轻松，但是图片中出现了大量需要搬运的重物，那么才能判断文字是讽刺。</p>
+<h2>1.17  MUStARD多模态讽刺检测数据集</h2>
+<p>地址：https://github.com/soujanyaporia/MUStARD。
+全称是：Multimodal Sarcasm Detection Dataset即多模态讽刺检测数据集。来自论文“Towards Multimodal Sarcasm Detection (An <em>Obviously</em> Perfect Paper)”。</p>
+<h2>1.18  MS MARCO微软自然语言数据集</h2>
+<p>地址：https://microsoft.github.io/msmarco/。
+该数据集的语言是英语，包含一系列自然语言数据集。最早起源于论文“MS MARCO: A Human Generated MAchine Reading COmprehension Dataset”。第一个数据集是一个问题答数据集，包括十万个从Bing采集到的问题人工生成的答案。
+后来又发布一些其他数据集，如关键词抽取数据集来自于论文“Open Domain Web Keyphrase Extraction Beyond Language Modeling”。论文提出的方法的代码实现在：https://github.com/microsoft/OpenKP。</p>
+<h2>1.19  一些英文关键词抽取数据集</h2>
+<p>表1.4对比了几个公开的英文关键词抽取数据集，主要指标有包含的文档数量，关键词的结构是否来自原文，如果关键词来自原文可以使用标注方法，否则需要自己生成关键词。另外还有每个数据集提供的额外信息。
+表1.4  一些英文关键词抽取数据集的对比
+名称  文档数 结果来自原文  额外信息
+MS MARCO    14万 是   文档的视觉样式
+SemEval 500 是   标题、期刊名称、作者定义的关键词、highlight
+Krapivin的数据集    2304    否   作者姓名，论文ACM Key
+Inspec  2000    否   每个文档有两组不同标准的关键词
+NUS 211 否   全文，keywords、keyphrases、key三种标注
+KP20k   2万  否 <br>
+MS MARCO上文已经介绍过，除了OpenKP外还有一个开源的基于BERT模型的方案BERT-KPE(Bert2Tag)：https://github.com/thunlp/BERT-KPE。
+SemEval包含500篇文档（350篇训练集、100篇测试集、50篇评估集）9022个关键词（去处重叠关键词后），平均每篇18.04，关键词来自原文。地址是：
+https://scienceie.github.io/index.html。
+Krapivin的数据集包含2304篇文档，12296个关键词，平均每篇5.34个。关键词不一定来自于原文。可在网站http://dit.unitn.it/~krapivin/下载。</p>
+<h2>1.20  其他英文语料</h2>
+<p>Brown语料库：于1961年发布，整个语料库有超过100万个单词。使用nltk库可以直接下载和访问Brown语料库。下载Brown语料库的代码如下。
+import nltk
+nltk.download('brown')
+WordNet：1985年发布，是一个英语词汇的语义网络。WordNet中不仅包含了词语，还给出了词语之间的关系。
+杨伯翰大学语料库：https://corpus.byu.edu/。
+英国国家语料库（BNC）：包含超过1亿个单词。访问地址为：https://corpus.byu.edu/bnc/。
+美国国家语料库（ANC）：http://www.anc.org/。
+美国当代英语语料库（COCA）：包含4.5亿个单词。
+路透社语料库：https://trec.nist.gov/data/reuters/reuters.html。
+BookCorpus数据集：来自于论文“Aligning Books and Movies: Towards Story-like Visual Explanations by Watching Movies and Reading Books”包含从互联网免费下载的1万多本未出版的书籍。涉及多个主题和种类。GPT模型预训练使用了该数据集。这个数据集已经不在公开，但是有一些开源代码可以帮助自动下载和生成这些数据。代码地址是：https://github.com/soskek/bookcorpus。
+Apache软件基金会（ASF）公共邮件存档，大小200GB。下载地址：https://aws.amazon.com/de/datasets/apache-software-foundation-public-mail-archives/。
+T4SA数据集：来自2017年的论文“Cross-Media Learning for Image Sentiment Analysis in the Wild”。数据集地址：http://www.t4sa.it/。在网站上提交一个表单可以获得用于下载的用户名和密码。
+这个数据集提供5个文件下载。除了原数据集T4SA还有一个B-T4SA是从T4SA中挑选出来的种类平衡的子集。
+T4SA有117万条twitter，147万图片。B-T4SA有15万图片。</p>
+<h2>1.21  机器翻译</h2>
+<p>Web Inventory of Transcribed and Translated Talks：https://wit3.fbk.eu/。
+ACL WMT ’14：http://www.statmt.org/wmt14/translation-task.html。
+论文“Neural Machine Transaltion by Jointly Learning to Align and Translate”使用了该数据集。</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://es2q.com/blog/">我的博客</a></li>
+                            <li><a href="https://github.com/sxwxs">我的GitHub</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
